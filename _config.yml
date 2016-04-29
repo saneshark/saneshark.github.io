@@ -11,6 +11,9 @@ github_username: saneshark
 facebook_username: karshenas
 email_username:  kam@saneshark.com
 
+collections:
+- portfolio_items
+
 # Build settings
 markdown: kramdown
 kramdown:

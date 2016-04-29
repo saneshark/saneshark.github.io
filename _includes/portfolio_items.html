@@ -1,0 +1,59 @@
+<section id="portfolio">
+  <h2 class="text-center">My Portfolio</h2>
+  {% for portfolio_item in site.portfolio_items %}
+    {% cycle 'add row' : '<div class="row">', nil, nil, nil %}
+      <div class="col-sm-3 portfolio-item">
+        <a href="#portfolio-modal-{{ portfolio_item.modal-id }}" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/portfolio_items/{{ portfolio_item.img }}" class="img-responsive" alt="{{ portfolio_item.client }} Logo">
+        </a>
+      </div>
+    {% cycle 'end row' : nil, nil, nil, '</div>' %}
+  {% endfor %}
+  {% cycle 'end row' : nil, '</div>', '</div>', '</div>' %}
+</section>
+
+<!-- Portfolio Modals -->
+{% for portfolio_item in site.portfolio_items %}
+  <div class="modal fade" id="portfolio-modal-{{ portfolio_item.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true" data-width="1024">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="fa fa-fw" aria-hidden="true" title="close"></i>
+          </button>
+          <h4 class="modal-title">{{ portfolio_item.client }}</h2>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-7">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <strong>Client:</strong>
+                  <a href="{{portfolio_item.link || #}}" target="_blank">{{ portfolio_item.client }}</a>
+                </li>
+                <li class="list-group-item">
+                  <strong>Date:&nbsp;&nbsp;</strong>
+                  {{ portfolio_item.project-date }}
+                </li>
+              </ul>
+              <p>{{ portfolio_item.description }}</p>
+            </div>
+            <div class="col-md-5">
+              <a href="{{portfolio_item.link || #}}" target="_blank">
+                <img src="img/portfolio_items/{{ portfolio_item.img }}" class="img-responsive img-centered linked" alt="{{ portfolio_item.client }} Logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
