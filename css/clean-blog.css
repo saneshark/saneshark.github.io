@@ -7,7 +7,7 @@
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
-  color: #404040;
+  color: #26262a;
 }
 p {
   line-height: 1.5;
@@ -26,7 +26,7 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #404040;
+  color: #26262a;
 }
 a:hover,
 a:focus {
@@ -111,14 +111,14 @@ hr.small {
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
+    color: #26262a;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
     color: #0085a1;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    color: #26262a;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
@@ -211,7 +211,7 @@ hr.small {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: #26262a;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
@@ -236,7 +236,7 @@ hr.small {
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #26262a;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
@@ -262,7 +262,7 @@ hr.small {
   display: block;
 }
 footer {
-  background-color: #404040;
+  background-color: #26262a;
   padding: 50px 0 65px;
 }
 footer .list-inline {
@@ -375,7 +375,7 @@ form .row:first-child .floating-label-form-group {
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #808080;
-  background-color: #404040;
+  background-color: #26262a;
   cursor: not-allowed;
 }
 ::-moz-selection {
@@ -412,6 +412,11 @@ section h2 {
 .info-section {
   background-color: #edeeef;
 }
+.map-section {
+  background-color: #353439;
+  color: #FFF;
+  padding: 20px 0;
+}
 @media only screen and (max-width: 640px) {
   .section {
     padding: 20px 15px;
@@ -432,7 +437,7 @@ section h2 {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: rgba(64, 64, 64, 0.7);
+  background: rgba(38, 38, 42, 0.7);
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
   transition: all ease .5s;
@@ -485,7 +490,7 @@ section h2 {
   cursor: pointer;
 }
 .modal-header {
-  color: #404040;
+  color: #26262a;
   background-color: #eeeeee;
   border-radius-bottom-left: none;
   border-radius-bottom-right: none;
@@ -494,4 +499,15 @@ section h2 {
   background-color: #eeeeee;
   border-radius-top-left: none;
   border-radius-top-right: none;
+}
+.current-location {
+  position: relative;
+  height: 400px;
+  width: 100%auto;
+  overflow: hidden;
+}
+.current-location img {
+  position: absolute;
+  top: calc(-75%);
+  left: calc(-140%);
 }

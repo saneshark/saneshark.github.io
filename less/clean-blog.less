@@ -475,6 +475,12 @@ section {
 	background-color: #edeeef;
 }
 
+.map-section {
+	background-color: @gray-less-dark;
+	color: #FFF;
+	padding: 20px 0 0;
+}
+
 @media only screen and (max-width: 640px) {
 	.section {
 		padding: 20px 15px;
@@ -558,4 +564,17 @@ section {
 	background-color: @gray-light;
 	border-radius-top-left: none;
 	border-radius-top-right: none;
+}
+
+.current-location {
+	position: relative;
+	height: 400px;
+	width: 100%auto;
+	overflow: hidden;
+
+	img {
+		position: absolute;
+		top: calc(50% - 125px);
+    left: calc(50% - 190px);
+	}
 }

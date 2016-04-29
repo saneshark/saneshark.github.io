@@ -4,7 +4,7 @@ title:      "Code Test"
 subtitle:   "This is only a test"
 date:       2016-04-26 08:25:00
 author:     "Kam Karshenas"
-header-img: "img/post-bg-01.jpg"
+header-img: "img/other.jpg"
 ---
 
 # Testing Headings that are large

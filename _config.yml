@@ -5,7 +5,7 @@ email: kam@saneshark.com
 copyright_name: Kam Karshenas
 description: "I'm a Senior Software Engineer with over ten years of experience in web development and architecture. I specialize in Ruby on Rails, Elastic Search, and Small Business Consulting."
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://saneshark.com"
 twitter_username: saneshark
 github_username: saneshark
 facebook_username: karshenas
@@ -19,8 +19,9 @@ markdown: kramdown
 kramdown:
    input: GFM
 highlighter: rouge
-permalink: pretty
+permalink: /blog/:categories/:year/:month/:day/:title
 paginate: 5
+paginate_path: "/blog/page:num"
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
