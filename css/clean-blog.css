@@ -415,7 +415,10 @@ section h2 {
 .map-section {
   background-color: #353439;
   color: #FFF;
-  padding: 20px 0;
+  padding: 20px 0 0;
+}
+.map-section img {
+  width: 100%;
 }
 @media only screen and (max-width: 640px) {
   .section {
