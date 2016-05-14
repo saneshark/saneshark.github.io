@@ -1,0 +1,12 @@
+<section class='container' id="services">
+  <h2 class="text-center">Services</h2>
+  {% for service in site.services %}
+    {% cycle 'add row' : '<div class="row">', nil %}
+      <div class="col-md-4 col-sm-6 col-md-offset-1 service text-center">
+        <h3><i class="fa {{ service.icon }} fa-2x fa-fw"></i> {{ service.title }}</h3>
+        <p class='small'>{{ service.description }}</p>
+        <p class='text-muted small'>More Info Coming Soon</p>
+      </div>
+    {% cycle 'end row' : nil, '</div>' %}
+  {% endfor %}
+</section>

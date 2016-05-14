@@ -13,6 +13,7 @@ email_username:  kam@saneshark.com
 
 collections:
 - portfolio_items
+- services
 
 # Build settings
 markdown: kramdown
