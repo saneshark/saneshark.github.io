@@ -581,3 +581,38 @@ section {
     left: calc(50% - 190px);
 	}
 }
+
+.accordian.panel {
+	box-shadow: none;
+	dt, dd {
+		margin-left: 20px;
+	}
+}
+
+dt a {
+	&:hover, &:visited, &:link, &:active {
+		text-decoration: none;
+	}
+
+	&:before {
+		font-family: 'FontAwesome';
+		display: inline-block;
+		width: 1.2em;
+		margin-left: -1.2em;
+		color: @brand-primary;
+		content: @fa-caret-down;
+	}
+
+	&.collapsed:before {
+		font-family: 'FontAwesome';
+  	content: @fa-caret-right;
+	}
+
+	&:not(.collapsed) {
+		color: @gray-dark;
+	}
+}
+
+dd {
+	margin-left: .2em;
+}

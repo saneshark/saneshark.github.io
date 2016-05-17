@@ -514,3 +514,34 @@ section h2 {
   top: calc(-75%);
   left: calc(-140%);
 }
+.accordian.panel {
+  box-shadow: none;
+}
+.accordian.panel dt,
+.accordian.panel dd {
+  margin-left: 20px;
+}
+dt a:hover,
+dt a:visited,
+dt a:link,
+dt a:active {
+  text-decoration: none;
+}
+dt a:before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1.2em;
+  color: #0085a1;
+  content: "\f0d7";
+}
+dt a.collapsed:before {
+  font-family: 'FontAwesome';
+  content: "\f0da";
+}
+dt a:not(.collapsed) {
+  color: #26262a;
+}
+dd {
+  margin-left: .2em;
+}
