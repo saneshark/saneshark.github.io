@@ -1,22 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+.sticky{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    position: sticky;
+    padding:0 20px;
+    border-bottom: #333 1px solid;
+    position: sticky;
+    top: 0px;
+    
+}
+
 
 .container {
     max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: auto;
+    text-align: center;
+
 }
-#page-1{
-    background-image: url(/imgs/water.jpg) ;
-    background-size: cover;
+.home{
+    text-align: center;
+    padding-top: 15%;
 }
 
 nav {
     color: #222;
-    padding: 20px 0;
+    text-align: right;
+    justify-content: right;
 }
 
 .nav-links {
@@ -27,29 +49,46 @@ nav {
 
 .nav-links li {
     display: inline;
-    margin-right: 20px;
+    margin:auto;
+    padding:10px;
+    font-size:16px;
 }
 
 .nav-links li a {
-    color: #fff;
+    color: #222;
     text-decoration: none;
 }
 
 header {
-    background-image: url('background.jpg');
     background-size: cover;
-    color: #222;
-    text-align: center;
-    font-weight: 700;
-    padding: 100px 0;
+    color: #fff;
+    width: 100%;
+    height: 500px;
+    background-color: #088178;
 }
 
 section {
     padding: 60px 0;
 }
 
+.btn-primary{
+    border-radius: 5px;
+    padding: 10px;
+    background-color:#fff;
+    color: #088178;
+    margin: 20px;
+    border: none;
+}
+
 .service {
     margin-bottom: 40px;
+}
+
+.logo{
+    text-align: left;
+    font-weight: 300;
+    font-style: italic;
+
 }
 
 /* feature services */
@@ -96,7 +135,7 @@ background-color: #cdebbc;
 }
 
 #feature .fe-box:nth-child(4) h6 {
-background-color: #cdd4f8;
+ background-color: #cdd4f8;
 }
 
 #feature .fe-box:nth-child(5) h6 {
