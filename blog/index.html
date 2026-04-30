@@ -1,37 +1,13 @@
----
-layout: page
-title: "Blog"
-description: We're a friendly talented team of engineers crafting beautiful web applications.
----
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.13.9"><title>Blog - Saneshark</title><meta name="description" content="Insights on agentic AI, automation strategies, and industry best practices."><!-- Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/about.DzVu6gPq.css"></head> <body class="min-h-screen gradient-bg text-white font-sans"> <header class="glass sticky top-0 z-50 border-b border-white/10"> <nav class="max-w-6xl mx-auto px-4 py-6"> <div class="flex items-center justify-between"> <a href="/" class="text-2xl font-bold text-gradient hover:scale-105 transition-transform">
+Saneshark
+</a> <div class="hidden md:flex space-x-8"> <a href="/work" class="text-gray-300 hover:text-white transition-colors hover:text-gradient">Work</a> <a href="/blog" class="text-gray-300 hover:text-white transition-colors hover:text-gradient">Blog</a> <a href="/story" class="text-gray-300 hover:text-white transition-colors hover:text-gradient">Story</a> <a href="/about" class="text-gray-300 hover:text-white transition-colors hover:text-gradient">About</a> <a href="/contact" class="text-gray-300 hover:text-white transition-colors hover:text-gradient">Contact</a> </div> </div> </nav> </header> <main>  <section class="py-20 relative min-h-screen"> <div class="absolute inset-0 overflow-hidden"> <div class="absolute top-20 left-1/4 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 rounded-full blur-2xl"></div> <div class="absolute bottom-20 right-1/4 w-48 h-48 bg-gradient-to-tr from-orange-500/10 to-pink-500/10 rounded-full blur-2xl"></div> </div> <div class="relative max-w-4xl mx-auto px-4"> <div class="text-center mb-16"> <h1 class="text-5xl md:text-6xl font-bold text-gradient mb-6">
+Blog
+</h1> <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+Insights on agentic AI, automation strategies, and industry best practices.
+</p> </div> <div class="glass-card rounded-3xl p-12 text-center"> <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-purple-500/20 flex items-center justify-center"> <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path> </svg> </div> <h2 class="text-3xl font-bold text-white mb-4">Blog Posts Coming Soon</h2> <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+We're preparing insights on agentic AI and automation strategies. Add your blog posts using MDX files in the content/blog directory.
+</p> <div class="flex flex-col sm:flex-row gap-4 justify-center"> <a href="/contact" class="btn-primary inline-flex items-center">
+Get Notified
+<svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5z"></path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19.5A2.5 2.5 0 016.5 17H20"></path> </svg> </a> <a href="/work" class="btn-secondary inline-flex items-center">
+View Case Studies
+<svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </a> </div> </div> </div> </section>  </main> <footer class="glass border-t border-white/10 mt-16"> <div class="max-w-6xl mx-auto px-4 py-12"> <div class="text-center"> <div class="text-gradient font-bold text-xl mb-2">Saneshark</div> <p class="text-gray-400">© 2026 Automation with bite.</p> </div> </div> </footer> </body></html>
